@@ -11,3 +11,4 @@
 9.В консоли к базе данных пишем CREATE INDEX IF NOT EXISTS image_vector_idx ON images USING RUM (image_vector);
 10.Индекс построится минут за 5-6
 11.Запускаем проект,пользуемся поисковой строкой и enter
+Ссылка на датасет: https://www.kaggle.com/yutkin/corpus-of-russian-news-articles-from-lenta
