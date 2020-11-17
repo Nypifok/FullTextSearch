@@ -8,16 +8,19 @@
 <link href="dist/css/tabulator.min.css" rel="stylesheet">
 <script type="text/javascript" src="dist/js/tabulator.min.js"></script>
 <script type="text/javascript" src="dist/js/jquery_wrapper.min.js"></script>
+
 <div class="text-center">
     <label for="site-search">Search through site content:</label>
     <input type="search" id="site-search" name="q"
            aria-label="Search through site content" onchange="Search()">
-
-
+    <div>
+        <button id="btn" onclick="LoadDataSet()" >Load DataSet</button>
+        <img src="/ajax-loader.gif" id="loading-indicator" style="position:center;display:none" />
+    </div>
 
     <div id="body"></div>
     <script>
-
+         
         function Search() {
             $.get("/Image/Search/" + $("#site-search").val(), function (data) {
                 var table = new Tabulator("#body", {
@@ -25,6 +28,15 @@
                     autoColumns: true, //create columns from data field names
                 });
             });
+        }
+        function LoadDataSet() {
+            $("#loading-indicator").show();
+            $("#btn").hide();
+            $.post("/Image/LoadDataSet/", function () {
+                $("#loading-indicator").hide();
+                }
+                
+            );
         }
     </script>
 </div>
