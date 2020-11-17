@@ -25,11 +25,11 @@ namespace FullTextSearch.Services
         {
             
             var images= context.Images
-                .FromSqlInterpolated($@"SELECT * FROM(SELECT images_id,title,key_words,description, image_vector, image_vector <=> plainto_tsquery('{query}') AS weight
+                .FromSqlInterpolated($@"SELECT * FROM(SELECT images_id,title,key_words,description, image_vector, image_vector <=> plainto_tsquery({query}) AS weight
                                                         FROM images
-                                                        WHERE image_vector  @@ plainto_tsquery('{query}')
+                                                        WHERE image_vector  @@ plainto_tsquery({query})
                                                         ORDER BY weight ASC
-                                                        limit 100) as response order by ts_rank(image_vector,plainto_tsquery('{query}')) ASC;").ToList();
+                                                        limit 100) as response order by ts_rank(image_vector,plainto_tsquery({query})) ASC;").ToList();
             return images;
         
         }
