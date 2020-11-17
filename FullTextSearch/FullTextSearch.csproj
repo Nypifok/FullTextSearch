@@ -1,0 +1,124 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap.css" />
+    <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap.min.css" />
+    <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap.min.css.map" />
+    <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap4.css" />
+    <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap4.min.css" />
+    <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap4.min.css.map" />
+    <None Include="wwwroot\dist\css\bulma\tabulator_bulma.css" />
+    <None Include="wwwroot\dist\css\bulma\tabulator_bulma.min.css" />
+    <None Include="wwwroot\dist\css\bulma\tabulator_bulma.min.css.map" />
+    <None Include="wwwroot\dist\css\materialize\tabulator_materialize.css" />
+    <None Include="wwwroot\dist\css\materialize\tabulator_materialize.min.css" />
+    <None Include="wwwroot\dist\css\materialize\tabulator_materialize.min.css.map" />
+    <None Include="wwwroot\dist\css\semantic-ui\tabulator_semantic-ui.css" />
+    <None Include="wwwroot\dist\css\semantic-ui\tabulator_semantic-ui.min.css" />
+    <None Include="wwwroot\dist\css\semantic-ui\tabulator_semantic-ui.min.css.map" />
+    <None Include="wwwroot\dist\css\tabulator.css" />
+    <None Include="wwwroot\dist\css\tabulator.min.css" />
+    <None Include="wwwroot\dist\css\tabulator.min.css.map" />
+    <None Include="wwwroot\dist\css\tabulator_midnight.css" />
+    <None Include="wwwroot\dist\css\tabulator_midnight.min.css" />
+    <None Include="wwwroot\dist\css\tabulator_midnight.min.css.map" />
+    <None Include="wwwroot\dist\css\tabulator_modern.css" />
+    <None Include="wwwroot\dist\css\tabulator_modern.min.css" />
+    <None Include="wwwroot\dist\css\tabulator_modern.min.css.map" />
+    <None Include="wwwroot\dist\css\tabulator_simple.css" />
+    <None Include="wwwroot\dist\css\tabulator_simple.min.css" />
+    <None Include="wwwroot\dist\css\tabulator_simple.min.css.map" />
+    <None Include="wwwroot\dist\css\tabulator_site.css" />
+    <None Include="wwwroot\dist\css\tabulator_site.min.css" />
+    <None Include="wwwroot\dist\css\tabulator_site.min.css.map" />
+    <None Include="wwwroot\dist\js\jquery_wrapper.js" />
+    <None Include="wwwroot\dist\js\jquery_wrapper.min.js" />
+    <None Include="wwwroot\dist\js\modules\accessor.js" />
+    <None Include="wwwroot\dist\js\modules\accessor.min.js" />
+    <None Include="wwwroot\dist\js\modules\ajax.js" />
+    <None Include="wwwroot\dist\js\modules\ajax.min.js" />
+    <None Include="wwwroot\dist\js\modules\calculation_colums.js" />
+    <None Include="wwwroot\dist\js\modules\calculation_colums.min.js" />
+    <None Include="wwwroot\dist\js\modules\clipboard.js" />
+    <None Include="wwwroot\dist\js\modules\clipboard.min.js" />
+    <None Include="wwwroot\dist\js\modules\data_tree.js" />
+    <None Include="wwwroot\dist\js\modules\data_tree.min.js" />
+    <None Include="wwwroot\dist\js\modules\download.js" />
+    <None Include="wwwroot\dist\js\modules\download.min.js" />
+    <None Include="wwwroot\dist\js\modules\edit.js" />
+    <None Include="wwwroot\dist\js\modules\edit.min.js" />
+    <None Include="wwwroot\dist\js\modules\export.js" />
+    <None Include="wwwroot\dist\js\modules\export.min.js" />
+    <None Include="wwwroot\dist\js\modules\filter.js" />
+    <None Include="wwwroot\dist\js\modules\filter.min.js" />
+    <None Include="wwwroot\dist\js\modules\format.js" />
+    <None Include="wwwroot\dist\js\modules\format.min.js" />
+    <None Include="wwwroot\dist\js\modules\frozen_columns.js" />
+    <None Include="wwwroot\dist\js\modules\frozen_columns.min.js" />
+    <None Include="wwwroot\dist\js\modules\frozen_rows.js" />
+    <None Include="wwwroot\dist\js\modules\frozen_rows.min.js" />
+    <None Include="wwwroot\dist\js\modules\group_rows.js" />
+    <None Include="wwwroot\dist\js\modules\group_rows.min.js" />
+    <None Include="wwwroot\dist\js\modules\history.js" />
+    <None Include="wwwroot\dist\js\modules\history.min.js" />
+    <None Include="wwwroot\dist\js\modules\html_table_import.js" />
+    <None Include="wwwroot\dist\js\modules\html_table_import.min.js" />
+    <None Include="wwwroot\dist\js\modules\keybindings.js" />
+    <None Include="wwwroot\dist\js\modules\keybindings.min.js" />
+    <None Include="wwwroot\dist\js\modules\menu.js" />
+    <None Include="wwwroot\dist\js\modules\menu.min.js" />
+    <None Include="wwwroot\dist\js\modules\moveable_columns.js" />
+    <None Include="wwwroot\dist\js\modules\moveable_columns.min.js" />
+    <None Include="wwwroot\dist\js\modules\moveable_rows.js" />
+    <None Include="wwwroot\dist\js\modules\moveable_rows.min.js" />
+    <None Include="wwwroot\dist\js\modules\mutator.js" />
+    <None Include="wwwroot\dist\js\modules\mutator.min.js" />
+    <None Include="wwwroot\dist\js\modules\page.js" />
+    <None Include="wwwroot\dist\js\modules\page.min.js" />
+    <None Include="wwwroot\dist\js\modules\persistence.js" />
+    <None Include="wwwroot\dist\js\modules\persistence.min.js" />
+    <None Include="wwwroot\dist\js\modules\print.js" />
+    <None Include="wwwroot\dist\js\modules\print.min.js" />
+    <None Include="wwwroot\dist\js\modules\reactive_data.js" />
+    <None Include="wwwroot\dist\js\modules\reactive_data.min.js" />
+    <None Include="wwwroot\dist\js\modules\resize_columns.js" />
+    <None Include="wwwroot\dist\js\modules\resize_columns.min.js" />
+    <None Include="wwwroot\dist\js\modules\resize_rows.js" />
+    <None Include="wwwroot\dist\js\modules\resize_rows.min.js" />
+    <None Include="wwwroot\dist\js\modules\resize_table.js" />
+    <None Include="wwwroot\dist\js\modules\resize_table.min.js" />
+    <None Include="wwwroot\dist\js\modules\responsive_layout.js" />
+    <None Include="wwwroot\dist\js\modules\responsive_layout.min.js" />
+    <None Include="wwwroot\dist\js\modules\select_row.js" />
+    <None Include="wwwroot\dist\js\modules\select_row.min.js" />
+    <None Include="wwwroot\dist\js\modules\sort.js" />
+    <None Include="wwwroot\dist\js\modules\sort.min.js" />
+    <None Include="wwwroot\dist\js\modules\validate.js" />
+    <None Include="wwwroot\dist\js\modules\validate.min.js" />
+    <None Include="wwwroot\dist\js\tabulator.es2015.js" />
+    <None Include="wwwroot\dist\js\tabulator.js" />
+    <None Include="wwwroot\dist\js\tabulator.min.js" />
+    <None Include="wwwroot\dist\js\tabulator_core.js" />
+    <None Include="wwwroot\dist\js\tabulator_core.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CsvHelper" Version="16.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="3.1.4" />
+    <PackageReference Include="PostgreSQLCopyHelper" Version="2.7.0" />
+  </ItemGroup>
+
+</Project>
