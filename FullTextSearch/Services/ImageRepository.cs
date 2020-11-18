@@ -21,17 +21,21 @@ namespace FullTextSearch.Services
         {
             await context.SaveChangesAsync();
         }
-        public async Task<IEnumerable<Image>> FullTextSearch(string query)
+        public async Task<IEnumerable<Image>> FullTextSearch(string query,string weights,int limit)
         {
             
-            var images= context.Images
-                .FromSqlInterpolated($@"SELECT * FROM(SELECT images_id,title,key_words,description, image_vector, image_vector <=> plainto_tsquery({query}) AS weight
-                                                        FROM images
-                                                        WHERE image_vector  @@ plainto_tsquery({query})
-                                                        ORDER BY weight ASC
-                                                        limit 100) as response order by ts_rank(image_vector,plainto_tsquery({query})) ASC;").ToList();
+            var images= await context.Images
+                .FromSqlInterpolated($@"SELECT * FROM images_fts({query},{weights},{limit});").ToListAsync();
             return images;
         
+        }
+        public async Task<IEnumerable<Image>> FullTextSearch(string query)
+        {
+
+            var images = await context.Images
+                .FromSqlInterpolated($@"SELECT * FROM images_fts({query},'ABC',100);").ToListAsync();
+            return images;
+
         }
         public async Task InsertAsync(IEnumerable<Image> images)
         {

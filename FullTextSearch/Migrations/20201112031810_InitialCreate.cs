@@ -56,8 +56,9 @@ namespace FTSApp.Migrations
             migrationBuilder.DropTable(
                 name: "images");
             migrationBuilder.Sql(@"DROP INDEX image_vector_idx;");
+            migrationBuilder.Sql(@"DROP FUNCTION make_tsvector;");
             migrationBuilder.Sql(@"DROP EXTENSION rum;");
-            migrationBuilder.Sql("DROP TRIGGER image_search_vector_update();");
+            migrationBuilder.Sql(@"DROP TRIGGER image_search_vector_update;");
 
 
         }

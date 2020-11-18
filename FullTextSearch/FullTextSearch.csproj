@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20201118142238_AddedStoredFunctions.cs" />
+    <Compile Remove="Migrations\20201118142238_AddedStoredFunctions.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap.css" />
     <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap.min.css" />
     <None Include="wwwroot\dist\css\bootstrap\tabulator_bootstrap.min.css.map" />
